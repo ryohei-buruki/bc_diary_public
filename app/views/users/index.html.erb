@@ -1,0 +1,7 @@
+<h1>users#index</h1>
+
+<%= @users.each do |user| %>
+  <%= user.last_name %>
+  <%= user.email %>
+  <hr>
+<% end %>
