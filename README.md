@@ -18,3 +18,14 @@ rails db:create
 rails db:migrate
 ```
 テスト環境はまだ未整備。seedも
+
+# 開発の流れについて
+## ブランチの切り方
+```
+git checkout -b issue-ナンバー
+```
+issueの番号によってブランチ名を変える。issueごとにブランチを切ることで、ブランチごとに編集範囲を狭くしてコンフリクトを減らしたい。
+issue#1なら、
+```
+git checkout -b issue-1
+```
