@@ -1,1 +1,3 @@
 # bc-diary
+
+first commit
