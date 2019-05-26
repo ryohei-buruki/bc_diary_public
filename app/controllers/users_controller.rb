@@ -1,4 +1,8 @@
 class UsersController < ApplicationController
+  def index
+    @users = User.all
+  end
+
   def new
     @user = User.new
   end
@@ -7,9 +11,9 @@ class UsersController < ApplicationController
     User.create(user_params)
     redirect_to users_path
   end
+  
+  def show
 
-  def index
-    @users = User.all
   end
 
   def edit
@@ -17,10 +21,6 @@ class UsersController < ApplicationController
   end
 
   def update
-
-  end
-
-  def show
 
   end
 

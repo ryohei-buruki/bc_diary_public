@@ -1,0 +1,10 @@
+<h1>diaries#new</h1>
+
+<%= form_with url: diaries_path, local: true do |f| %>
+  <%= f.label "タイトル" %>
+  <%= f.text_field 'diary[title]' %>
+  <%= f.label "日付" %>
+  <%= f.date_field 'diary[date]' %>
+
+  <%= f.submit '作成する' %>
+<% end %>

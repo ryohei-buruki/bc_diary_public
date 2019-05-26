@@ -1,4 +1,8 @@
 class ApplicationController < ActionController::Base
+  def index
+
+  end
+
   def new
 
   end
@@ -7,7 +11,7 @@ class ApplicationController < ActionController::Base
 
   end
 
-  def index
+  def show
 
   end
 
@@ -16,10 +20,6 @@ class ApplicationController < ActionController::Base
   end
 
   def update
-
-  end
-
-  def show
 
   end
 
